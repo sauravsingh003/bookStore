@@ -51,7 +51,7 @@ function Signup() {
                 ✕
               </Link>
 
-              <h3 className="font-bold text-lg">Signup</h3>
+              <h3 className="font-bold text-2xl text-pink-500">Signup</h3>
               <div className="mt-4 space-y-2">
                 <span>Name</span>
                 <br />

@@ -13,10 +13,12 @@ function Navbar() {
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
+      element.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
       document.body.classList.add("dark");
     } else {
       element.classList.remove("dark");
+      element.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
       document.body.classList.remove("dark");
     }
@@ -45,7 +47,7 @@ function Navbar() {
         <a href="/course">Course</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/contact">Contact</a>
       </li>
       <li>
         <a>About</a>
